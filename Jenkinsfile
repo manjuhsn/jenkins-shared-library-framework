@@ -1,4 +1,4 @@
-@Library('dcube-library@master') _
+@Library('dcube-library@master')
 
 pipeline {
     agent any
