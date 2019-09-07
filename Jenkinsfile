@@ -1,13 +1,15 @@
-@Library('dcube-library@master')
-
+@Library('jenkins-library@master') _
+ 
 pipeline {
     agent any
     stages {
         stage('Git Checkout') {
-    gitCheckout(
-        branch: "master",
-        url: "https://github.com/manjuhsn/jenkins-shared-library-framework.git"
-    )
-}
+            steps {
+            gitCheckout(
+                branch: "master",
+                url: "https://github.com/manjuhsn/jenkins-shared-library-framework.git"
+            )
+            }
+    }
     }
 }
